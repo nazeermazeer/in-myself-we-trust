@@ -1,0 +1,66 @@
+CH. 5 Programming Projects
+
+
+1. Payroll Report
+Design a payro11 class that stores an employee's ID number, gross pay, state tax, federal 
+tax, and FICA withholdings. The class should have a method that calculates the employee's net pay, as follows:
+
+net pay = gross pay - state tax - federal tax - FICA withholdings
+
+Use the class in a program that displays a weekly payroll report. A loop in the program 
+should ask the user for the employee ID number, gross pay, state tax, federal tax, and FICA 
+withholdings, and should pass these values to an instance of the Payroll class. The net pay 
+should be displayed. The loop should terminate when 0 is entered for the employee number.
+After the data is entered, the program should display totals for gross pay, state tax, federal 
+tax, FICA withholdings, and net pay.
+
+Input Validation: Do not accept negative numbers for any of the items entered. Do not accept values for 
+state, federal, or FICA withholdings that are greater than the gross pay. If the state tax + federal tax 
++ FICA withholdings for any employee are greater than gross pay, print an error message and ask the user 
+to reenter the data for that employee.
+
+
+
+2. Centigrade to Fahrenheit Table
+Write a program that displays a table of the centigrade temperatures 0 through 20 and
+their Fahrenheit equivalents. The formula for converting a temperature from centigrade 
+to Fahrenheit is
+
+F = 9/5C + 32
+
+where F is the Fahrenheit temperature and C is the centigrade temperature. Your program 
+must use a loop to display the table.
+
+
+3. Random Number Guessing Game
+Write a program that generates a random number and asks the user to guess what the 
+number is. If the user's guess is higher than the random number, the program should display
+"Too high, try again." If the user's guess is lower than the random number, the program 
+should display "Too low, try again." The program should use a loop that repeats until the 
+user correctly guesses the random number.
+
+Enhance the program that you wrote  so it keeps a count 
+of the number of guesses that the user makes. When the user correctly guesses the random 
+number, the program should display the number of guesses.
+
+
+4. Coin-Toss Simulator
+Write a class named coin. The coin class should have the following field:
+
+• A String named sideup. The sideUp field will hold cither "heads" or "tails" indicating 
+  the side of the coin that is facing up.
+
+The Coin class should have the following methods:
+
+• A no-arg constructor that calls the toss method, described next,
+• A void method named toss that simulates the tossing of the coin. When the toss 
+  method is called, it generates a random number in the range of 0 through 1. If the 
+  random number is O, then it sers the sideup field to heads". If the random number 
+  is 1, then it sets the sideUp field to "tails".
+• A method named getsideUp that returns the value of the sideup field.
+
+Write a program that demonstrates the coin class. The program should create an instance of 
+the class and display the side that is initially facing up. Then, use a loop to toss the coin 20 
+times. Each time the coin is tossed, display the side that is facing up. The program should 
+keep count of the number of times a head is facing up and the number of times a tail is 
+facing up and display those values after the loop finishes.
