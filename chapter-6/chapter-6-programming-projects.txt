@@ -1,0 +1,101 @@
+CH. 6 Programming Projects
+
+
+1. Carpet Calculator
+The Westfield Carpet Company has asked you to write an application that calculates the
+price of carpeting for rectangular rooms. To calculate the price, you multiply the area of the
+floor (width times length) by the price per square foot of carpet. For example, the area of
+floor that is 12 feet long and 10 feet wide is 120 square feet. To cover that floor with carpet
+that costs $8 per square foot would cost $960. (12 × 10 × 8 = 960.)
+
+First, you should create a class named RoomDimension that has two fields: one for the length
+of the room and one for the width. The RoomDimension class should have a method that
+returns the area of the room. (The area of the room is the room's length multiplied by the
+room's width.)
+
+Next you should create a Roomcarpet class that has a RoomDimension object as a field. It
+should also have a field for the cost of the carpet per square foot. The Roomcarpet class
+should have a method that returns the total cost of the carpet.
+Figure 6-19 is a UML. diagram showing possible class designs and depicting the relation-
+ships between the classes. Once you have written these classes, use them in an application
+that asks the user to enter the dimensions of a room and the price per square foot of the
+desired carpeting. The application should display the total cost of the carpet.
+
+
+2. CashRegister Class
+Write a CashRegister class that can be used with the RetailItem class that you modified in
+Programming Challenge 7. The cashRegister class should simulate the sale of a retail item,
+It should have a constructor that accepts a RetailI tem object as an argument. The construc-
+tor should also accept an integer that represents the quantity of items being purchased. In
+addition, the class should have the following methods:
+
+• The getsubtotal method should return the subtotal of the sale, which is the quantity
+multiplied by the retail cost. This method must get the retail cost from the Retailitem
+object that was passed as an argument to the constructor.
+
+• The gettax method should return the amount of sales tax on the purchase. The sales
+tax rate is 6% of a retail sale.
+
+• The getrotal method should return the total of the sale, which is the subtotal plus
+the sales tax.
+
+Demonstrate the class in a program that asks the user for the quantity of items being pur-
+chased, and then displays the sale's subtotal, amount of sales tax, and total.
+
+
+3. Parking Ticket
+For this assignment you will design a set of classes that work together to simulate a police
+officer issuing a parking ticket. The classes you should design are:
+
+• The ParkedCar Class: This class should simulate a parked car. The class's responsibili-
+nes are:
+    - To know the car's make, model, color, license number, and the number of minutes
+      that the car has been parked
+
+• The ParkingMater Class: This class should simulate a parking meter. The class's only
+responsibility is:
+    - To know the number of minutes of parking time that has been purchased
+
+• The ParkingTicket Class: This class should simulate a parking ticket. The classs
+responsibilities are:
+    - To report the make, model, color, and license number of the illegally parked car
+    - To report the amount of the fine, which is $25 for the first hour or part of an hour
+      that the car is illegally parked, plus $10 for every additional hour or part of an
+      hour that the car is illegally parked
+    - To report the name and badge number of the police officer issuing the ticket
+
+• The PoliceOfficer Class: This class should simulate a police officer inspecting parked
+cars. The class's responsibilities are:
+    - To know the police officer's name and badge number
+    - To examine a Parkedcar object and a parkingoter object, and determine whether
+      the car's time has expired
+    - To issue a parking ticket (generare a Parkingticket object) if the cars time has
+      expired
+
+Write a program that demonstrates how these classes collaborate.
+
+4. Car-Instrument Simulator
+For assignment you will design a set of classes that work together to simulate a car's
+fuel gauge and odometer. The classes you will design are as follows:
+
+• The FuelGauge Class: This class simulate a fuel gauge. It's responsibilities are
+    - To know the car's current amount of fuel, in gallons.
+    - To report the car's current amount of fuel, in gallons.
+    - To be able to increment the amount of fuel by 1 gallon. This simulates putting fuel
+      in the car. (The car can hold a maximum of 15 gallons.)
+    - To be able to decrement the amount of fuel by 1 gallon, if the amount of fuel is
+      greater than O gallons. This simulates burning fuel as the car runs.
+
+• The Odometer Class: This class simulates the car's odometer. It's responsibilities are
+    - To know the car's current mileage.
+    - To report the car's current mileage.
+    - To be able to increment the current mileage by 1 mile. The maximum mileage the
+      odometer can store is 999,999 miles. When this amount is exceeded, the odometer
+      resets the current mileage to 0.
+    - To be able to work with a FuelGuage object. It should decrease the FuelGauge
+      object's current amount of fuel by 1 gallon for every 24 miles traveled. (The car's
+      fuel economy is 24 miles per gallon.)
+
+Demonstrate the classes by creating instances of each. Simulate filling the car up with fuel,
+and then run a loop that increments the odometer until the car runs out of fuel. During each
+loop iteration, print the car's current mileage and amount of fuel.
